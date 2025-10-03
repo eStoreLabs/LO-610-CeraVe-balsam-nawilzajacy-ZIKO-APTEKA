@@ -36,7 +36,7 @@ $transition: all 0.3s ease-in-out;
   line-height: 1.25;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 1330px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -70,6 +70,10 @@ $transition: all 0.3s ease-in-out;
     text-wrap: balance;
     text-transform: uppercase;
     margin-block: $px-M;
+    @media (min-width: 992px) {
+      font-size: 40px;
+      margin-block: 24px;
+    }
   }
 
   .es-mobile {
@@ -225,6 +229,32 @@ $transition: all 0.3s ease-in-out;
         width: 71%;
         &__logo {
           right: 7%;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 1200px) {
+      &__right {
+        width: 71%;
+        &__logo {
+          max-width: 25%;
+          right: 4.5%;
+        }
+        &__textCtn {
+          max-width: 550px;
+          margin-left: 24%;
+        }
+        &__wrapper {
+          gap: 24px;
+        }
+        &__title {
+          font-size: 50px;
+          margin-bottom: 20px;
+        }
+        &__icon {
+          max-width: 113px;
+        }
+        &__text {
+          font-size: 25px;
         }
       }
     }
@@ -390,6 +420,50 @@ $transition: all 0.3s ease-in-out;
         width: 105%;
       }
     }
+    @container es-rc-content (min-width: 1000px) {
+      overflow: hidden;
+      &__bg {
+        width: 111%;
+      }
+    }
+    @container es-rc-content (min-width: 1200px) {
+      padding: 60px;
+      &__title {
+        font-size: 40px;
+      }
+      &__subtitle {
+        font-size: 28px;
+      }
+      &__points {
+        &__icon {
+          width: 20px;
+          height: 20px;
+          margin-top: 8px;
+        }
+        &__item {
+          font-size: 25px;
+          line-height: 1.4;
+        }
+      }
+      &__wrapper {
+        &--top {
+          max-width: 550px;
+        }
+        &--bottom {
+          max-width: 680px;
+        }
+      }
+      &__badgeCtn {
+        max-width: 500px;
+        gap: 30px;
+      }
+      &__badge__text {
+        font-size: 30px;
+      }
+      &__text {
+        font-size: 23px;
+      }
+    }
   }
 
   .es-ingredients {
@@ -453,6 +527,30 @@ $transition: all 0.3s ease-in-out;
         justify-content: flex-end;
         &__item {
           width: 250px;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 992px) {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      &__bubbles {
+        max-width: 385px;
+      }
+      &__title {
+        font-size: 40px;
+      }
+      &__list {
+        margin-top: 60px;
+        flex-wrap: nowrap;
+        &__item {
+          max-width: 300px;
+        }
+        &__title {
+          font-size: 25px;
+        }
+        &__text {
+          font-size: 23px;
         }
       }
     }
@@ -545,6 +643,23 @@ $transition: all 0.3s ease-in-out;
         width: 50%;
       }
     }
+    @container es-rc-content (min-width: 992px) {
+      height: 550px;
+      &__title {
+        font-size: 30px;
+      }
+      &__list {
+        &__icon {
+          max-width: 55px;
+        }
+        &__text {
+          font-size: 25px;
+        }
+        &__image {
+          max-height: 600px;
+        }
+      }
+    }
   }
 
   .es-formula-use {
@@ -585,6 +700,18 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 768px) {
       &__image {
         width: 50%;
+      }
+    }
+    @container es-rc-content (min-width: 992px) {
+      &__content {
+        width: 50%;
+        max-width: 650px;
+      }
+      &__name {
+        font-size: 30px;
+      }
+      &__text {
+        font-size: 25px;
       }
     }
   }
@@ -693,6 +820,21 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
+    @container es-rc-content (min-width: 992px) {
+      &__left {
+        padding: 60px;
+      }
+      &__subtitle {
+        font-size: 30px;
+      }
+      &__packs {
+        padding-right: 60px;
+        padding-top: 40px;
+        &__sizes {
+          font-size: 20px;
+        }
+      }
+    }
   }
 
   .es-cross {
@@ -786,7 +928,7 @@ $transition: all 0.3s ease-in-out;
         flex: 1 1 0;
         max-width: unset;
         &__image {
-          max-height: 92%;
+          max-height: 275px;
           max-width: 200px;
           width: auto;
           padding: 0;
@@ -808,6 +950,32 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 880px) {
       &__content {
         gap: 8px;
+      }
+    }
+    @container es-rc-content (min-width: 992px) {
+      &__item {
+        &__image {
+          max-height: 92%;
+          max-width: unset;
+        }
+        &__text {
+          &-step {
+            font-size: 30px;
+          }
+          &-name {
+            font-size: 25px;
+          }
+          &-text {
+            font-size: 23px;
+            line-height: 1.5;
+          }
+          &-description {
+            height: 150px;
+          }
+          &-button {
+            font-size: 25px;
+          }
+        }
       }
     }
   }

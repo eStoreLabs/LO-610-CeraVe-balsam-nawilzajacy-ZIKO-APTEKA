@@ -5,7 +5,7 @@
   line-height: 1.25;
   color: #003058;
   background-color: #ffffff;
-  max-width: 990px;
+  max-width: 1330px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -39,6 +39,12 @@
   text-wrap: balance;
   text-transform: uppercase;
   margin-block: 16px;
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-section-title {
+    font-size: 40px;
+    margin-block: 24px;
+  }
 }
 #es-rc #es-rc-content .es-mobile {
   display: block;
@@ -189,6 +195,32 @@
   }
   #es-rc #es-rc-content .es-kv__right__logo {
     right: 7%;
+  }
+}
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-kv__right {
+    width: 71%;
+  }
+  #es-rc #es-rc-content .es-kv__right__logo {
+    max-width: 25%;
+    right: 4.5%;
+  }
+  #es-rc #es-rc-content .es-kv__right__textCtn {
+    max-width: 550px;
+    margin-left: 24%;
+  }
+  #es-rc #es-rc-content .es-kv__right__wrapper {
+    gap: 24px;
+  }
+  #es-rc #es-rc-content .es-kv__right__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  #es-rc #es-rc-content .es-kv__right__icon {
+    max-width: 113px;
+  }
+  #es-rc #es-rc-content .es-kv__right__text {
+    font-size: 25px;
   }
 }
 #es-rc #es-rc-content .es-features {
@@ -342,6 +374,50 @@
     width: 105%;
   }
 }
+@container es-rc-content (min-width: 1000px) {
+  #es-rc #es-rc-content .es-features {
+    overflow: hidden;
+  }
+  #es-rc #es-rc-content .es-features__bg {
+    width: 111%;
+  }
+}
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-features {
+    padding: 60px;
+  }
+  #es-rc #es-rc-content .es-features__title {
+    font-size: 40px;
+  }
+  #es-rc #es-rc-content .es-features__subtitle {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-features__points__icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+  }
+  #es-rc #es-rc-content .es-features__points__item {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+  #es-rc #es-rc-content .es-features__wrapper--top {
+    max-width: 550px;
+  }
+  #es-rc #es-rc-content .es-features__wrapper--bottom {
+    max-width: 680px;
+  }
+  #es-rc #es-rc-content .es-features__badgeCtn {
+    max-width: 500px;
+    gap: 30px;
+  }
+  #es-rc #es-rc-content .es-features__badge__text {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-features__text {
+    font-size: 23px;
+  }
+}
 #es-rc #es-rc-content .es-ingredients {
   position: relative;
   z-index: 1;
@@ -405,6 +481,32 @@
   }
   #es-rc #es-rc-content .es-ingredients__list__item {
     width: 250px;
+  }
+}
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-ingredients {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+  }
+  #es-rc #es-rc-content .es-ingredients__bubbles {
+    max-width: 385px;
+  }
+  #es-rc #es-rc-content .es-ingredients__title {
+    font-size: 40px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list {
+    margin-top: 60px;
+    flex-wrap: nowrap;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__item {
+    max-width: 300px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__title {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__text {
+    font-size: 23px;
   }
 }
 #es-rc #es-rc-content .es-benefits__image.es-mobile {
@@ -491,6 +593,23 @@
     width: 50%;
   }
 }
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-benefits {
+    height: 550px;
+  }
+  #es-rc #es-rc-content .es-benefits__title {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-benefits__list__icon {
+    max-width: 55px;
+  }
+  #es-rc #es-rc-content .es-benefits__list__text {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-benefits__list__image {
+    max-height: 600px;
+  }
+}
 #es-rc #es-rc-content .es-formula-use__content {
   background-color: #0073ce;
   color: #ffffff;
@@ -530,6 +649,18 @@
 @container es-rc-content (min-width: 768px) {
   #es-rc #es-rc-content .es-formula-use__image {
     width: 50%;
+  }
+}
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-formula-use__content {
+    width: 50%;
+    max-width: 650px;
+  }
+  #es-rc #es-rc-content .es-formula-use__name {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text {
+    font-size: 25px;
   }
 }
 #es-rc #es-rc-content .es-video__iframe {
@@ -630,6 +761,21 @@
     width: 137%;
   }
 }
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-packaging__left {
+    padding: 60px;
+  }
+  #es-rc #es-rc-content .es-packaging__subtitle {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-packaging__packs {
+    padding-right: 60px;
+    padding-top: 40px;
+  }
+  #es-rc #es-rc-content .es-packaging__packs__sizes {
+    font-size: 20px;
+  }
+}
 #es-rc #es-rc-content .es-cross__content {
   display: flex;
   flex-direction: column;
@@ -715,7 +861,7 @@
     max-width: unset;
   }
   #es-rc #es-rc-content .es-cross__item__image {
-    max-height: 92%;
+    max-height: 275px;
     max-width: 200px;
     width: auto;
     padding: 0;
@@ -734,6 +880,28 @@
 @container es-rc-content (min-width: 880px) {
   #es-rc #es-rc-content .es-cross__content {
     gap: 8px;
+  }
+}
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-cross__item__image {
+    max-height: 92%;
+    max-width: unset;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-step {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-name {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-text {
+    font-size: 23px;
+    line-height: 1.5;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-description {
+    height: 150px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-button {
+    font-size: 25px;
   }
 }
 #es-rc #es-rc-content .es-disclaimer {
